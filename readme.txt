@@ -89,7 +89,8 @@ on run {input, parameters}
 	set letters to input as text	
 	set channel to (length of letters) mod 9 + 1
 	-- display dialog letters & " " & (length of letters)  & " " & channel
-	tell application id "com.runningwithcrayons.Alfred" to run trigger "channel" in workflow "com.alfredapp.kitanotamotsu.tv" with argument channel	
+	tell application id "com.runningwithcrayons.Alfred" to run trigger "channel" 
+	in workflow "com.alfredapp.kitanotamotsu.tv" with argument channel	
 end run
  
 
