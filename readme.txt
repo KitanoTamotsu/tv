@@ -27,7 +27,7 @@ TV番組表.alfredworkflowのメモ
 
 　link=(1 ${link[@]})
 　
-　これは、配列の添字をあわせるためのコーティングで、
+　これは、配列（title、link、subの3つでtitleの要素が1つ少ない状態）の添字をあわせるためのコーティングです
 　このようにすると、配列のはじめの要素として"1"を追加できます
 
 
@@ -79,5 +79,18 @@ TV番組表.alfredworkflowのメモ
 　思いついて、ちょっといじってみると、簡単にできてびっくりです
 　なお、ワークフロー接続は、アップルスクリプトからの接続もできますし、そのワークフロー自身への接続も可能です
 　Alfredってよくできてますね
+ 
+　おまけとして、RandomTV.appというドロップレットを作成しました
+　適当にファイルをドロップすると文字数（9で割っ余り+1）でTVのチャンネル変更をします
+　RandomTV.appをautomatorで開くとスクリプトがみれますが、短いので、以下に貼り付けます
+  tell部分がAlfredワークフローの呼び出し方です
+ 
+on run {input, parameters}	
+	set letters to input as text	
+	set channel to (length of letters) mod 9 + 1
+	-- display dialog letters & " " & (length of letters)  & " " & channel
+	tell application id "com.runningwithcrayons.Alfred" to run trigger "channel" in workflow "com.alfredapp.kitanotamotsu.tv" with argument channel	
+end run
+ 
 
 
