@@ -1,5 +1,8 @@
 ## 　　Lesson18.　別のワークフローを呼び出す  
 #### 開発メモ
+
+[サンプル動画](https://user-images.githubusercontent.com/40127279/126053119-aac3540b-9642-47f3-86ef-1d5fe4007a29.mp4)
+
 ### 1.TV番組の取得と表示
 　TV王国のRSSを利用して放送中の番組を取得します
 <br>　このワークフローでは東京エリア地デジのRSSを利用していますので、適宜修正してください　
@@ -59,7 +62,7 @@
 <br>　Alfredってよくできてますね
 <br>　
 #### おまけ
-　RandomTV.appというドロップレットを作成しました（RandomTV.app.cpgzという圧縮ファイルです）
+　[RandomTV.app.zip](https://github.com/KitanoTamotsu/tv/files/6835528/RandomTV.app.zip)というドロップレットを作成しました 
 <br>　適当にファイルをドロップすると、そのパス＋ファイル名の文字数（9で割っ余り+1）でTVのチャンネル変更をします
 <br>　RandomTV.appをautomatorで開くとスクリプトが見れますが、短いので、以下に貼り付けます
 <br>　tell部分がAlfredワークフローの呼び出し方です
