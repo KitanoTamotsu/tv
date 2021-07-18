@@ -62,7 +62,7 @@
 <br>　Alfredってよくできてますね
 <br>　
 #### おまけ
-　[RandomTV.app.zip](https://github.com/KitanoTamotsu/tv/files/6835528/RandomTV.app.zip)というドロップレットを作成しました 
+　[RandomTV.app](https://github.com/KitanoTamotsu/tv/files/6835528/RandomTV.app.zip)というドロップレットを作成しました 
 <br>　適当にファイルをドロップすると、そのパス＋ファイル名の文字数（9で割っ余り+1）でTVのチャンネル変更をします
 <br>　RandomTV.appをautomatorで開くとスクリプトが見れますが、短いので、以下に貼り付けます
 <br>　tell部分がAlfredワークフローの呼び出し方です
