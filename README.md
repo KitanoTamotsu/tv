@@ -47,6 +47,7 @@
 <br>　
 <br>　External (Lesson10のワークフロー）
 <br>　<img width="600" src="https://user-images.githubusercontent.com/40127279/126859289-6d5172e0-2288-4766-96d9-4e966f24189e.png">
+<br>　なにやらサンプルコードが目立ちますね。。気になったら下の方のおまけを見てね。
 <br>　
 <br>　ここまで設定したら、呼び出す側のワークフローを作ります
 <br>　Call Externalオブジェクトを配置して、
