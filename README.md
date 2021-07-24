@@ -1,7 +1,12 @@
 ## 　　Lesson18.　別のワークフローを呼び出す  
-#### 開発メモ
 
 [サンプル動画](https://user-images.githubusercontent.com/40127279/126053119-aac3540b-9642-47f3-86ef-1d5fe4007a29.mp4)
+#### 開発メモ
+ワークフロー
+<br><img width="600" src="https://user-images.githubusercontent.com/40127279/126859172-605ef5f8-5826-44a4-a1ce-50f9db25e380.png">
+<br>
+<br>参考ワークフロー(Lesson10)
+<br><img width="600" src="https://user-images.githubusercontent.com/40127279/126859210-ea34493a-90cf-4914-8274-b089d1645bca.png">
 
 ### 1.TV番組の取得と表示
 　TV王国のRSSを利用して放送中の番組を取得します
@@ -18,6 +23,10 @@
 <br>　これは、配列の添字をあわせるためのコーティングで、${link[@]}は配列全体なので、
 <br>　その前に、要素として"1"を追加しています
 <br>　つまり、配列の先頭の要素を追加するコードです
+<br>　
+<br>　Script Filter
+<br>　<img width="600" src="https://user-images.githubusercontent.com/40127279/126859248-af370be1-ceca-4195-9542-b5b3ec957bf1.png">
+
 ### 2.別のワークフローを呼び出す
 　TVのチャンネル変更は、Lesson10で既に作成しているTVのリモコン with NatureRemoという
 <br>　ワークフローを流用します
@@ -36,10 +45,16 @@
 <br>　com.alfredapp.ユーザー名.ワークフロー名という感じが推奨れる表記ルールですが
 <br>　一意であればなんでもOKです
 <br>　
+<br>　External (Lesson10のワークフロー）
+<br>　<img width="600" src="https://user-images.githubusercontent.com/40127279/126859289-6d5172e0-2288-4766-96d9-4e966f24189e.png">
+<br>　
 <br>　ここまで設定したら、呼び出す側のワークフローを作ります
 <br>　Call Externalオブジェクトを配置して、
 <br>　Workflow IDに、Bundle IDを、Trigger IDにIdentifierを記入すれば接続可能です
 <br>
+<br>　Call External
+<br>　<img width="600" src="https://user-images.githubusercontent.com/40127279/126859354-058a36dd-cc72-40d3-a7d0-2203afbed662.png">
+<br>　
 <br>　またTVのリモコンワークフローのKeywordオブジェクトと、
 <br>　このワークフローのScriptFilterオブジェクトのキーワドを一致させることでシームレスな
 <br>　利用をサポートしています
@@ -60,6 +75,12 @@
 <br>　"{}"が引数となってしまうのです
 <br>　仕方なくRunScriptオブジェクトでコントロールしましたが、ちょっと不恰好
 <br>
+<br>　Post Notification (Lesson10のワークフロー）
+<br>　<img width="600"  src="https://user-images.githubusercontent.com/40127279/126859390-62d85dfe-3446-4d7d-9a22-7ffd9832738f.png">
+<br>
+<br>　Run Script (Lesson10のワークフロー）
+<br>　<img width="600" src="https://user-images.githubusercontent.com/40127279/126859405-80e1a267-6c8f-42b6-bf4c-874fa3ec2f08.png">
+
 #### 背景
 　RSS関連のワークフローを作っている時に思いつきました
 <br>　そうだ、TV番組一覧から好きな番組を選んで、チャンネル変更すると便利かも
